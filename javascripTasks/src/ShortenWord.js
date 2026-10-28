@@ -2,7 +2,7 @@ class ShortenWord {
   findShortestWord(sentence) {
     const words = sentence.split(" ");
     let shortestWord = words[0];
-    let regexChecker = /[0-9][a-zA-Z]+/;
+    let regexChecker = /[0-9]|[^a-zA-Z]+/;
 
     for (const word of words) {
       if (word.length < shortestWord.length) shortestWord = word;
