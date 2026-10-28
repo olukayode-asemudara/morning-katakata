@@ -12,7 +12,7 @@ test("test that I can find the shortest word for one letter words", () => {
   expect(shortestWord.findShortestWord("I am batman")).toBe("I");
 });
 
-test("test for invalid words", () => {
+test("test for invalid characters as words", () => {
   const shortestWord = new ShortenWord();
   expect(() => {
     shortestWord.findShortestWord(".. .. .");
